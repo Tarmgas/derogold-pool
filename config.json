@@ -1,8 +1,8 @@
 {
-  "coin": "derogold",
-  "symbol": "DEGO",
+  "coin": "dyngecoin",
+  "symbol": "DYNGE",
   "coinUnits": 100,
-  "coinDifficultyTarget": 20,
+  "coinDifficultyTarget": 30,
   "logging": {
     "files": {
       "level": "info",
@@ -22,15 +22,20 @@
     "minerTimeout": 3600,
     "ports": [
       {
-        "port": 5858,
-        "difficulty": 10000,
-        "desc": "Standard hardware"
-      }
+        "port": 5551,
+        "difficulty": 100,
+        "desc": "Old hardware"
+      },
+            {
+        "port": 5552,
+        "difficulty": 1000000,
+        "desc": "Asic 120kh"
+      },
 ],
     "varDiff": {
       "minDiff": 100,
-      "maxDiff": 500000,
-      "targetTime": 10,
+      "maxDiff": 5000000,
+      "targetTime": 30,
       "retargetTime": 30,
       "variancePercent": 30,
       "maxJump": 100
@@ -71,19 +76,19 @@
   "payments": {
     "enabled": true,
     "allowPaymentId": true,
-    "interval": 120,
-    "maxAddresses": 50,
-    "transferFee": 1000000,
-    "minPayment": 100000000,
+    "interval": 240,
+    "maxAddresses": 20,
+    "transferFee": 1,
+    "minPayment": 1000000,
     "minPaymentIdPayment": 100000000,
-    "maxTransactionAmount": 0,
-    "denomination": 100
+    "maxTransactionAmount": 100000000,
+    "denomination": 100000
   },
   "blockUnlocker": {
     "enabled": true,
-    "interval": 20,
-    "depth": 120,
-    "poolFee": 0,
+    "interval": 30,
+    "depth": 10,
+    "poolFee": 1,
     "devDonation": 0,
     "coreDevDonation": 0,
     "extraFeaturesDevDonation": 0
@@ -100,11 +105,11 @@
   },
   "daemon": {
     "host": "127.0.0.1",
-    "port": 6969
+    "port": 7771
   },
   "wallet": {
     "host": "127.0.0.1",
-    "port": 8070,
+    "port": 7772,
     "password": ""
   },
   "redis": {
@@ -113,7 +118,7 @@
   },
   "monitoring": {
     "daemon": {
-      "checkInterval": 60,
+      "checkInterval": 30,
       "rpcMethod": "getblockcount"
     },
     "wallet": {
