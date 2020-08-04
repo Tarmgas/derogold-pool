@@ -9,7 +9,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/derogold/derogold-pool"
+        "url": "https://github.com/Tarmgas/dyngecoin-pool"
     },
     "scripts": {
         "test": "npm install && node tests/dependencyTests.js"
