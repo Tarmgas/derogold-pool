@@ -79,9 +79,7 @@ Comes with lightweight example front-end script which uses the pool's AJAX API.
 * [Forknote](https://forknote.net)
 * [TurtleCoin](http://chat.turtlecoin.lol)
 
-#### Pools Using This Software
 
-* https://publicnode.ydns.eu/cuvee-dego/
 
 Usage
 ===
@@ -105,10 +103,7 @@ Usage
 
 
 ==OLD==
-* DeroGold daemon
-* derogold-service
-* [Node.js](http://nodejs.org/) LTS (6,8,10) ([follow these installation instructions](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions))
-* [Redis](http://redis.io/) key-value store v2.6+ ([follow these instructions](http://redis.io/topics/quickstart))
+
 * libssl required for the node-multi-hashing module
   * For Ubuntu: `sudo apt-get install -y libssl-dev`
 
@@ -123,48 +118,16 @@ npm install -g windows-build-tools --vs2015
 ##### Seriously
 Those are legitimate requirements. If you use old versions of Node.js or Redis that may come with your system package manager then you will have problems. Follow the linked instructions to get the last stable versions.
 
-[**Redis security warning**](http://redis.io/topics/security): be sure firewall access to redis - an easy way is to
-include `bind 127.0.0.1` in your `redis.conf` file. Also it's a good idea to learn about and understand software that
-you are using - a good place to start with redis is [data persistence](http://redis.io/topics/persistence).
 
-##### Easy install on Ubuntu 14 LTS
 
-Installing pool on different Linux distributives is different because it depends on system default components and versions. For now the easiest way to install pool is to use Ubuntu 14 LTS. Thus, all you had to do in order to prepare Ubuntu 14 for pool installation is to run:
-
-```bash
-sudo apt-get install -y git build-essential redis-server libboost1.55-all-dev cmake libssl-dev node-gyp
-```
-
-##### Debian 9 installation
-These are the steps taken to install pool on Debian 9.  These steps will also work on Ubuntu 16 & 18:
-
-```bash
-sudo apt-get install -y git curl wget screen build-essential redis-server libboost-all-dev cmake libssl-dev node-gyp
-```
-I have currently tested this on Node 8.11.1 and 8.12.0.
-
-You can install node here: (https://nodejs.org/en/download/package-manager/)
-
-Or directly from a terminal:
-
-```bash
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt-get install -y nodejs
-```
-
-I have found using a screen session to keep everything running on the server works well.
-
-Grab your most recent DeroGold release (https://github.com/derogold/derogold/releases/) then launch your daemon and sync your chain.
-
-Once your daemon is synced with the network start your derogold-service and redis-server.
 
 #### 1) Downloading & Installing
 
 Clone the repository and run `npm install` for all the dependencies to be installed:
 
 ```bash
-git clone https://github.com/derogold/derogold-pool.git
-cd derogold-pool
+git clone https://github.com/Tarmgas/dyngecoin-pool.git dyngepool
+cd dyngepool
 npm install && npm test
 ```
 
