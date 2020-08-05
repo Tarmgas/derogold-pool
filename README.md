@@ -86,7 +86,17 @@ Comes with lightweight example front-end script which uses the pool's AJAX API.
 Usage
 ===
 
-#### Requirements
+#### Requirements (under update)
+  NODE
+ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+ restart terminal
+ nvm install 8.15
+  REDIS
+sudo add-apt-repository ppa:chris-lea/redis-server
+sudo apt-get update
+sudo apt-get install redis-server
+
+==OLD==
 * DeroGold daemon
 * derogold-service
 * [Node.js](http://nodejs.org/) LTS (6,8,10) ([follow these installation instructions](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions))
