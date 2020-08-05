@@ -87,14 +87,22 @@ Usage
 ===
 
 #### Requirements (under update)
-  NODE
- wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
- restart terminal
- nvm install 8.15
-  REDIS
-sudo add-apt-repository ppa:chris-lea/redis-server
-sudo apt-get update
-sudo apt-get install redis-server
+*  NODE
+
+ *wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+ 
+ *restart terminal
+ 
+ *nvm install 8.15
+ 
+ * REDIS
+ 
+*sudo add-apt-repository ppa:chris-lea/redis-server
+
+*sudo apt-get update
+
+*sudo apt-get install redis-server
+
 
 ==OLD==
 * DeroGold daemon
