@@ -101,7 +101,7 @@ Usage
 
 *sudo apt-get install redis-server
 
-*sudo apt-get install python make g++
+*sudo apt-get install python make g++ libboost-all-dev
 
 ==OLD==
 
