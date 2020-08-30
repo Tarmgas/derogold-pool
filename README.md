@@ -101,6 +101,7 @@ Usage
 
 *sudo apt-get install redis-server
 
+*sudo apt-get install python make g++
 
 ==OLD==
 
